@@ -1,19 +1,90 @@
 <html>
-    <body class='overflow-x-hidden'>
-        <div class="container mx-auto">
-            <header>
-                <nav class="flex justify-between">
-                    <div class="logo fonts-bold flex items-center text-blue">Food </div>
-                    <ul class="navbar flex items-center">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Contact Us</li>
-                        <li><button class="btn">Order Now</button></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+    <head>
+        <title>landing page</title>
+        <style type="text/css">
+        *{padding:0;margin:0;box-sizing:border-box; font-family: sans-serif;}
+        header{
+            width:100%;
+            height:100vh;
+            background:url('Food.jpeg');
+        }
+        nav{
+            width:100%;
+            height:100px;
+            color:white;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+        }
+        .logo{
+            font-size:50px;
+            letter-spacing:2px;
+            color:Red;
+        }
+        .menu a{
+            text-decoration:none;
+            color:white;
+            padding:10px 20px;
+            font-size:20px;
+            position:relative;
+        }
+        .menu a:before{
+            content: '';
+            position:absolute;
+            top:0;
+            left:0;
+            width:0%;
+            height:100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width:90%;
+        }
+        .register a{
+            text-decoration:none;
+            color:black;
+            padding:10px 20px;
+            font-size:20px;
+            background:indianred;
+            border-radius:8px;
+            transition: 0.4s linear;
+        }
+        .register a:hover{
+            background:transparent;
+            border:1px solid indianred;
+        }
+        .h-txt{
+            max-width:650px;
+            position:absolute;
+            top:50%;
+            left:20%;
+            color:blueviolet;
+            transform:translate(-50%,-50%);
+        }
+        .h-txt h1{
+            font-size:3.5em;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">Deliverright</div>
+                <div class="menu">
+                   <a href="#">Home</a>
+                   <a href="#">Menu</a>
+                   <a href="#">Reviews</a>
+                   <a href="#">Contact Us</a>
+                </div>
+                <div class="register">
+                    <a href="#">Order Now</a>
+                </div>
+            </nav>
+            <section class="h-txt">
+                <h1>DON'T STARVE <br> JUST ORDER</h1>
+            </section>
+        </header>
     </body>
 </html>
             
